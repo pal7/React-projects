@@ -1,0 +1,41 @@
+.enquiries-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.course-container {
+  margin-top: 20px;
+  width: 80%;
+}
+
+.course-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.enquiries-list {
+  list-style: none;
+  padding: 0;
+}
+
+.enquiry {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.enquiry-name {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.enquiry-email {
+  font-size: 16px;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.enquiry-message {
+  font-size: 14px;
+}

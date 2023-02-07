@@ -3,36 +3,24 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Product from "./Product";
-import Customer from "./Customer";
-import NotFound404 from "./NotFound404";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./Header";
-import Nested from "./Nested";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Courses from "./Courses";
+import EnquiryForm from "./EnquiryForm";
+import Enquiries from "./Enquiries";
+// import Header from "./Header.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Router>
+      {/* <Header /> */}
       <Routes>
-        <Route path="/" element={<Header />}>
-          <Route index element={<App />} />
-          <Route path="customer" element={<Customer />} />
-          <Route path="product" element={<Product name="guitar" />} />
-          <Route path="product/:id" element={<Product name="guitar" />} />
-          <Route path="*" element={<NotFound404 />} />
-        </Route>
-        <Route path="nested">
-          <Route index element={<Nested />} />
-          <Route path="subpage">
-            <Route index element={<Customer />} />
-            <Route path="customer" element={<Customer />} />
-            <Route path="customer/:id" element={<Customer />} />
-            <Route path="product/:id" element={<Product name="pNAme" />} />
-          </Route>
-        </Route>
+        <Route path="/" element={<App />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/enquiries" element={<Enquiries />} />
+        <Route path="/enquire/:id" element={<EnquiryForm />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   </React.StrictMode>
 );
 

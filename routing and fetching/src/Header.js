@@ -1,22 +1,23 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
   return (
-    <div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
+    <nav className="header">
+      <ul className="header__list">
+        <li className="header__list-item">
+          <Link to="/courses" className="header__link">
+            Courses
+          </Link>
         </li>
-        <li>
-          <Link to="/customer">Customer</Link>
-        </li>
-        <li>
-          <Link to="/product">Product</Link>
+        <li className="header__list-item">
+          <Link to="/enquiries" className="header__link">
+            Enquiries
+          </Link>
         </li>
       </ul>
-      <Outlet />
-    </div>
+    </nav>
   );
 };
 
