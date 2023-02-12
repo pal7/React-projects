@@ -1,0 +1,35 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Courses from "./Courses";
+import EnquiryForm from "./EnquiryForm";
+import Enquiries from "./Enquiries";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+
+// import Header from "./Header.js";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <Router>
+        {/* <Header /> */}
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/enquiries" element={<Enquiries />} />
+          <Route path="/enquire/:id" element={<EnquiryForm />} />
+        </Routes>
+      </Router>
+    </Provider>
+  </React.StrictMode>
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

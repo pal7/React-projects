@@ -1,0 +1,71 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Intro to Computer Science",
+      "description": "A comprehensive introduction to computer science and programming concepts",
+      "instructor": "John Doe",
+      "start_date": "2023-03-01",
+      "end_date": "2023-06-15",
+      "enrollment_limit": 50,
+      "course-enquiries": [
+        {
+          "name": "test",
+          "email": "test@test.com",
+          "message": "test"
+        },
+        {
+          "name": "Ashwin Ramani",
+          "email": "ashwnramani@gmail.com",
+          "message": "aa"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Data Structures and Algorithms",
+      "description": "Study of data structures and algorithms for efficient data management and processing",
+      "instructor": "Jane Smith",
+      "start_date": "2023-04-01",
+      "end_date": "2023-07-15",
+      "enrollment_limit": 40,
+      "course-enquiries": []
+    },
+    {
+      "id": 3,
+      "name": "Web Development Today",
+      "description": "Learn how to build and design dynamic web applications",
+      "instructor": "Bob Brown",
+      "start_date": "2023-05-01",
+      "end_date": "2023-08-15",
+      "enrollment_limit": 30,
+      "course-enquiries": []
+    },
+    {
+      "id": 4,
+      "name": "Machine Learning",
+      "description": "Discover the fundamentals of machine learning and its applications in various fields",
+      "instructor": "Sarah Johnson",
+      "start_date": "2023-06-01",
+      "end_date": "2023-09-15",
+      "enrollment_limit": 35,
+      "course-enquiries": []
+    },
+    {
+      "id": 5,
+      "name": "Mobile App Development",
+      "description": "Learn how to build native mobile apps for iOS and Android platforms",
+      "instructor": "Michael Davis",
+      "start_date": "2023-07-01",
+      "end_date": "2023-10-15",
+      "enrollment_limit": 25,
+      "course-enquiries": [
+        {
+          "name": "test",
+          "email": "test@mail.com",
+          "message": "test"
+        }
+      ]
+    }
+  ]
+}
