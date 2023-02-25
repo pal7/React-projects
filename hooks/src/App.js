@@ -33,8 +33,8 @@ function App() {
     <div className="App">
       <h1>hooks</h1>
       <h2>Login</h2>
-      {/* <h3>what's coming from the API</h3>
-      <h4>{stringifiedData}</h4> */}
+      <h3>what's coming from the API</h3>
+      <h4>{stringifiedData}</h4>
       <div>
         {data.map((item, index) => (
           <ul>
